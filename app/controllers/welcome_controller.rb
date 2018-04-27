@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    render :index
+    @skills = Skill.all
   end
 end
