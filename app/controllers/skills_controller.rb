@@ -14,7 +14,7 @@ class SkillsController < ApplicationController
   def create
     @skill = Skill.new(skill_params)
     if @skill.save
-      flash[:notice] = "#{@skill.name} was added!"
+      flash[:notice] = "#{@skill.skill_name} was added!"
       redirect_to skills_path
     else
       render :new
@@ -29,7 +29,7 @@ class SkillsController < ApplicationController
   def update
     @skill = Skill.find(params[:id])
     if @skill.update(skill_params)
-      flash[:notice] = "#{@skill.name} was successfully updated!"
+      flash[:notice] = "#{@skill.skill_name} was successfully updated!"
       redirect_to skills_path
     else
       render :edit
@@ -39,7 +39,7 @@ class SkillsController < ApplicationController
   def destroy
     @skill = Skill.find(params[:id])
     @skill.destroy
-    flash[:notice] = "#{@skill.name} was successfully deleted."
+    flash[:notice] = "#{@skill.skill_name} was successfully deleted."
     redirect_to skills_path
   end
 
