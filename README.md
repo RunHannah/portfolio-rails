@@ -1,23 +1,62 @@
-# Hannah Portfolio - in progress!
+# Portfolio - in progress!
 
-A portfolio of my work while at coding school and prior experience, built on Rails.
+##### Epicodus Rails Course Week 2 - Code Review
 
-Things you may want to cover:
+##### An application to share my work and experience, built on Rails. 04/27/2018
 
-* Ruby version
+## By Hannah Lee
 
-* System dependencies
+# Description
 
-* Configuration
+This is an application using Ruby on Rails demonstrating authentication using Devise. Users are able to view projects, skills, and background information.
 
-* Database creation
+* Allows an admin user that can add, edit, and delete information.
 
-* Database initialization
+# Details
 
-* How to run the test suite
+* Welcome Page: This is a summary on my professional background, why I am pursuing a career in coding, and personal interests.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Projects: This is a selection of projects I have created and the technologies used.
 
-* Deployment instructions
+* Skills: This is a list of skills and examples of how I have demonstrated them in the workplace.
 
-* ...
+
+
+## Technologies Used
+
+Application: Ruby, Rails<br>
+Testing: Rspec, Capybara<br>
+authentication: Gem Devise
+
+
+```
+$ git clone https://github.com/RunHannah/portfolio-rails
+```
+```
+$ cd portfolio-rails
+```
+
+Install required gems:
+```
+$ bundle install
+```
+
+Create databases:
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+Start the webserver:
+```
+$ rails s
+```
+
+Navigate to `localhost:3000` in browser.
+
+### License
+
+  *MIT License*
+
+Copyright (c) 2018 **Hannah Lee**
