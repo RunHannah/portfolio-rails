@@ -1,0 +1,13 @@
+<div class="container">
+  <nav>
+    <a><%= link_to "Home", root_path %></a>
+    <a><%= link_to "Projects", projects_path() %></a>
+    <a><%= link_to "Skills", skills_path() %></a>
+
+    <% if current_user %>
+    <a><%= link_to "Sign Out", '/users/sign_out', method: 'delete' %></a>
+    <% else %>
+    <a><%= link_to "Sign In", '/users/sign_in' %></a>
+    <% end %>
+  </nav>
+</div>
