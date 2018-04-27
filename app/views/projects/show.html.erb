@@ -1,0 +1,35 @@
+<div class="container">
+  <h3><%= @project.project_name %></h3>
+  <br>
+  <nav>
+  <p><%= link_to "Home", root_path %></p>
+  <p><%= link_to "Return to Projects List", projects_path %></p>
+  </nav>
+  <hr>
+
+  <% if @project.any? %>
+
+    <ul>
+      <% @projects.each do |project| %>
+      <div class="card">
+        <div class="card-body">
+          <li style="list-style:none;">
+            <em><strong>Project Name: </strong></em><%= project.project_name %>
+            <br>
+            <em><strong>Technologies Used: </strong></em><%= project.project_technology %>
+            <br>
+            <em><strong>Description: </strong></em><%= project.project_description %>
+            <br>
+          </li>
+        </div>
+      </div>
+      <% end %>
+    </ul>
+
+    <hr>
+
+  <% else %>
+    <p>There are no current projects.</p>
+
+  <% end %>
+</div>

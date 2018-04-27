@@ -1,0 +1,16 @@
+<!-- <%= render "layouts/errors", :object => @product %> -->
+
+<div class="container">
+  <%= form_for @project do |f| %>
+  <%= f.label :project_name %>
+  <%= f.text_field :project_name %>
+  <br>
+  <%= f.label :project_technology %>
+  <%= f.text_field :project_technology %>
+  <br>
+  <%= f.label :project_description %>
+  <%= f.text_field :project_description %>
+  <br>
+  <%= f.submit  %>
+  <% end %>
+</div>
