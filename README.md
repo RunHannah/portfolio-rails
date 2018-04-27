@@ -1,6 +1,6 @@
-# Portfolio - in progress!
+# Portfolio - under construction!
 
-##### Epicodus Rails Course Week 2 - Code Review
+#### Epicodus Rails Course Week 2 - Code Review
 
 ##### An application to share my work and experience, built on Rails. 04/27/2018
 
@@ -12,7 +12,7 @@ This is an application using Ruby on Rails demonstrating authentication using De
 
 * Allows an admin user that can add, edit, and delete information.
 
-# Details
+## Details
 
 * Welcome Page: This is a summary on my professional background, why I am pursuing a career in coding, and personal interests.
 
