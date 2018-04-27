@@ -1,10 +1,6 @@
 <div class="container">
   <h3><%= @project.project_name %></h3>
-  <br>
-  <nav>
-  <a><%= link_to "Home", root_path %></a>
-  <a><%= link_to "Return to Projects List", projects_path %></a>
-  </nav>
+
   <hr>
 
   <% if @project.any? %>
