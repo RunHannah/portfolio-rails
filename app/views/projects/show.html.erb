@@ -2,30 +2,22 @@
   <h3><%= @project.project_name %></h3>
 
   <hr>
-
-  <% if @project.any? %>
-
-    <ul>
-      <% @projects.each do |project| %>
       <div class="card">
         <div class="card-body">
           <li style="list-style:none;">
-            <em><strong>Project Name: </strong></em><%= project.project_name %>
+            <em><strong>Project Name: </strong></em><%= @project.project_name %>
             <br>
-            <em><strong>Technologies Used: </strong></em><%= project.project_technology %>
+            <em><strong>Technologies Used: </strong></em><%= @project.project_technology %>
             <br>
-            <em><strong>Description: </strong></em><%= project.project_description %>
+            <em><strong>Description: </strong></em><%= @project.project_description %>
             <br>
           </li>
         </div>
       </div>
-      <% end %>
+
     </ul>
 
     <hr>
 
-  <% else %>
-    <p>There are no current projects.</p>
 
-  <% end %>
 </div>
