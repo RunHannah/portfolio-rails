@@ -1,1 +1,26 @@
 @import "bootstrap";
+
+nav {
+  align-items: stretch;
+  padding: 20px 25px 20px 25px;
+  margin-left: -12px;
+  margin-right: -16px;
+  // background-color: rgba(0,0,0,0.2);
+}
+
+nav a {
+  padding: 20px 20px 20px 20px;
+}
+
+#photos {
+  font-size: 10px;
+}
+
+.navbar {
+  padding: 10px 10px 10px 10px;
+}
+
+.carousel-inner {
+ width: auto;
+ height: 500px;
+}
