@@ -5,7 +5,7 @@ nav {
   padding: 20px 25px 20px 25px;
   margin-left: -12px;
   margin-right: -16px;
-  // background-color: rgba(0,0,0,0.2);
+  background-color: #91ADC2;
 }
 
 nav a {
@@ -23,4 +23,20 @@ nav a {
 .carousel-inner {
  width: auto;
  height: 500px;
+}
+
+#footer {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #91ADC2;
+  color: white;
+}
+
+.col-container {
+  display: flex;
+  width: 100%;
+}
+.col {
+  flex: 1;
 }
