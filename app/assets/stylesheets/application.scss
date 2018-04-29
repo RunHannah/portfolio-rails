@@ -6,27 +6,21 @@ body {
 
 nav {
   align-items: stretch;
-  padding: 20px 25px 20px 25px;
-  background-color: #1151FF;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  // background-color: #1151FF;
+  background-color: black;
 }
 
 nav a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
   padding: 20px 20px 20px 20px;
 }
 
-nav a:hover {
-  background-color: #91ADC2;
-  border-radius: 4px;
-}
-
-nav a:hover::after {
-  background-color: #1151FF;
-}
-
 #welcome {
-  background-color: #91ADC2;
+  // background-color: #91ADC2;
+  background-color: black;
   color: white;
   margin-top: -15px;
   padding-top: 40px;
@@ -48,6 +42,7 @@ nav a:hover::after {
 .carousel-inner {
  width: auto;
  height: 500px;
+ background-size: auto;
 }
 
 #footer {
@@ -63,7 +58,7 @@ nav a:hover::after {
 }
 
 #footer, .col:hover {
-  background-color: #91ADC2;
+  background-color: black;
   border-radius: 4px;
 }
 
@@ -82,4 +77,8 @@ nav a:hover::after {
 img, #laptop {
   width: 80%;
   float: right;
+}
+
+#caption {
+  font-size: 10px;
 }
