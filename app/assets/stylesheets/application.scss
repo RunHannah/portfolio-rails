@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
 nav {
   align-items: stretch;
   padding: 20px 25px 20px 25px;
@@ -9,10 +13,16 @@ nav {
 nav a {
   text-decoration: none;
   color: white;
+  padding: 20px 20px 20px 20px;
 }
 
-nav a {
-  padding: 20px 20px 20px 20px;
+nav a:hover {
+  background-color: #91ADC2;
+  border-radius: 4px;
+}
+
+nav a:hover::after {
+  background-color: #1151FF;
 }
 
 #welcome {
@@ -25,6 +35,10 @@ nav a {
 
 #photos {
   font-size: 10px;
+}
+
+#carouselExampleIndicators {
+  padding: 0px !important;
 }
 
 .navbar {
@@ -44,10 +58,28 @@ nav a {
   color: white;
 }
 
+#footer, .col {
+  text-align: center;
+}
+
+#footer, .col:hover {
+  background-color: #91ADC2;
+  border-radius: 4px;
+}
+
+#footer, .col:hover::after {
+  background-color: #1151FF;
+}
+
 .col-container {
   display: flex;
   width: 100%;
 }
 .col {
   flex: 1;
+}
+
+img, #laptop {
+  width: 80%;
+  float: right;
 }
