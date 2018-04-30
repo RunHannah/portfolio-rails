@@ -49,7 +49,7 @@ nav a {
   margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #1151FF;
+  background-color: black;
   color: white;
 }
 
@@ -57,14 +57,14 @@ nav a {
   text-align: center;
 }
 
-#footer, .col:hover {
-  background-color: black;
-  border-radius: 4px;
-}
-
-#footer, .col:hover::after {
-  background-color: #1151FF;
-}
+// #footer, .col:hover {
+//   background-color: black;
+//   border-radius: 4px;
+// }
+//
+// #footer, .col:hover::after {
+//   background-color: #1151FF;
+// }
 
 .col-container {
   display: flex;
@@ -81,4 +81,30 @@ img, #laptop {
 
 #caption {
   font-size: 10px;
+}
+
+#flash-notice {
+  -moz-animation: cssAnimation 0s ease-in 3s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 3s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 3s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+  }
 }

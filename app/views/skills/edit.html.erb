@@ -3,5 +3,7 @@
 
   <hr>
 
-  <%= render "form" %>
+  <% if current_user && current_user.admin %>
+    <%= render "form" %>
+  <% end %>
 </div>

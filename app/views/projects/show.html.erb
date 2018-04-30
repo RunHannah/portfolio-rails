@@ -1,6 +1,8 @@
 <div class="container">
   <h3><%= @project.project_name %></h3>
-  <a><%= link_to "Edit This Project", edit_project_path(@project) %></a>
+  <% if current_user && current_user.admin %>
+    <a><%= link_to "Edit This Project", edit_project_path(@project) %></a>
+  <% end %>
 
   <hr>
       <div class="card">

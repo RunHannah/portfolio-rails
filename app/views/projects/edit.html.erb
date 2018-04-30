@@ -2,6 +2,7 @@
   <h1>Edit Project</h1>
 
   <hr>
-
-  <%= render "form" %>
+  <% if current_user && current_user.admin %>
+    <%= render "form" %>
+  <% end %>
 </div>

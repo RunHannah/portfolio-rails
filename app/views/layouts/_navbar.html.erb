@@ -3,15 +3,14 @@
   <a><%= link_to "Projects", projects_path() %></a>
   <a><%= link_to "Skills", skills_path() %></a>
 
-  <div class="col-md-6">
-    <div class="sign_up_or_in">
-      <% if current_user %>
-        <!-- <%= link_to "Sign out", '/users/sign_out', method: 'delete' %> | -->
-        <%= link_to "Sign out", '/users/sign_out', method: 'delete' %> |
-        <%=link_to "Edit user", '/users/edit' %>
-      <% else %>
-        <%= link_to "Sign up", '/users/sign_up' %> | <%= link_to "Sign in", '/users/sign_in' %>
-      <% end %>
-    </div>
-  </div>
+  <% if current_user %>
+    <!-- <%= link_to "Sign out", '/users/sign_out', method: 'delete' %> | -->
+    <a><%= link_to "Sign out", '/users/sign_out', method: 'delete' %></a>
+    <a><%=link_to "Edit user", '/users/edit' %></a>
+  <% else %>
+    <a><%= link_to "Sign in", '/users/sign_in' %></a>
+    <a><%= link_to "Sign up", '/users/sign_up' %></a>
+  <% end %>
+
+
 </nav>

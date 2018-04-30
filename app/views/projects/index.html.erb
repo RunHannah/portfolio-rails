@@ -1,6 +1,8 @@
 <div class="container">
   <h1>Projects</h1>
-  <a><%= link_to "Add a Project", new_project_path %></a>
+  <% if current_user && current_user.admin %>
+    <a><%= link_to "Add a Project", new_project_path %></a>
+  <% end %>
   <hr>
 </div>
 
