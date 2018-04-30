@@ -93,6 +93,9 @@ img, #laptop {
   animation: cssAnimation 0s ease-in 3s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  background-color: black;
+  text-align: center;
+  color: white;
 }
 @keyframes cssAnimation {
   to {
