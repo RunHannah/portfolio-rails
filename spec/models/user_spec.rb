@@ -1,6 +1,6 @@
 require 'rails_helper'
 
 describe User do
-  it { should have_many :projects }
-  it { should have_many :skills }
+  # it { should have_many :projects }
+  # it { should have_many :skills }
 end
