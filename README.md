@@ -16,11 +16,13 @@ This is an application using Ruby on Rails demonstrating authentication using De
 
 * Welcome Page: This is a summary on my professional background, why I am pursuing a career in coding, and personal interests.
 
-* Projects: This is a selection of projects I have created and the technologies used.
+* Projects Page: This will display a selection of projects I have created and the technologies used.
 
-* Skills: This is a list of skills and examples of how I have demonstrated them in the workplace.
+* Skills Page: This will display a list of skills and examples of how I have demonstrated them in the workplace.
 
-* Strengths: 
+* Strengths: Eye for detail, critical thinking, and perseverance to find the right solution. Remain upbeat under high pressure and changing environments, skilled in communicating with senior leadership, and can perform independently or as a team. Code school has demonstrated by team work and communication skills through pair programming, being a flexible and adaptable learner by switching languages and frameworks throughout the course, and being a problem solver by creating functional applications on both the front- and back-ends.
+
+* Examples of Work: To be added...
 
 ## Technologies Used
 
