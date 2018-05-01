@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  belongs_to :user
+  # belongs_to :user
 
   validates :project_name, :presence => true
   validates :project_technology, :presence => true
