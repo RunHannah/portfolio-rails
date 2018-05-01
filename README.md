@@ -20,7 +20,7 @@ This is an application using Ruby on Rails demonstrating authentication using De
 
 * Skills: This is a list of skills and examples of how I have demonstrated them in the workplace.
 
-
+* Strengths: 
 
 ## Technologies Used
 
