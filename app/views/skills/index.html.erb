@@ -1,21 +1,11 @@
 <div class="container">
-  <h1>Skills</h1>
-  <a><%= link_to "Add a Skill", new_skill_path %></a>
+  <h3>Resume</h3>
   <hr>
-</div>
-
-
-<div class="container">
-  <% if @skills.any? %>
-  <ol>
-    <% @skills.each do |skill| %>
-    <p><%= skill.skill_name %>, <%= skill.skill_description %></p>
-
-    <% end %>
-  </ol>
-
-  <% else %>
-    <p>There are no skills listed.</p>
-
-  <% end %>
+  <p>About</p>
+  <hr>
+  <p>Technologies</p>
+  <hr>
+  <p>Experience</p>
+  <hr>
+  <p>Education</p>
 </div>

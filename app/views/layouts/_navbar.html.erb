@@ -1,16 +1,5 @@
 <nav>
-  <a><%= link_to "Home", root_path %></a>
-  <a><%= link_to "Projects", projects_path() %></a>
-  <a><%= link_to "Skills", skills_path() %></a>
-
-  <% if current_user %>
-    <!-- <%= link_to "Sign out", '/users/sign_out', method: 'delete' %> | -->
-    <a><%= link_to "Sign out", '/users/sign_out', method: 'delete' %></a>
-    <a><%=link_to "Edit user", '/users/edit' %></a>
-  <% else %>
-    <a><%= link_to "Sign in", '/users/sign_in' %></a>
-    <a><%= link_to "Sign up", '/users/sign_up' %></a>
-  <% end %>
-
-
+  <a><%= link_to "home", root_path %></a>
+  <a><%= link_to "resume", skills_path %></a>
+  <a><a href="https://github.com/RunHannah/">github</a></a>
 </nav>
