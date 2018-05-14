@@ -1,4 +1,4 @@
 Project.destroy_all
 
 
-Project.create!(project_name: "Test Project", project_technology: "JavaScript, Angular2", project_description: "yadda yadda yadda")
+Project.create!([{ image: File.new("db/images/nps.png"), project_name: "National Park Service", project_technology: "TypeScript, Angular5, Firebase Database", project_description: "To recreate the National Park Service website within 16 hours."}, { image: File.new("db/images/pdxbnb.png"), project_name: "PDXbnb", project_technology: "TypeScript, Angular5, chart.js, Firebase Database", project_description: "JavaScript course group project. Data visualization of average rental rates for airbnb rentals in Portland."}])

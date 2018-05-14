@@ -42,24 +42,22 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+#projects {
+  margin-top: 100px;
+}
 
 /**
  * Footer Styles
  */
 
- #footer, .col {
-   text-align: center;
- }
-
 .footer {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
-  // background-color: #efefef;
   color: grey;
-  // text-align: center;
+  text-align: center;
 }
 
 .col-container {
@@ -70,32 +68,31 @@ body {
   flex: 1;
 }
 
-
-// #flash-notice {
-//   -moz-animation: cssAnimation 0s ease-in 3s forwards;
-//   /* Firefox */
-//   -webkit-animation: cssAnimation 0s ease-in 3s forwards;
-//   /* Safari and Chrome */
-//   -o-animation: cssAnimation 0s ease-in 3s forwards;
-//   /* Opera */
-//   animation: cssAnimation 0s ease-in 3s forwards;
-//   -webkit-animation-fill-mode: forwards;
-//   animation-fill-mode: forwards;
-//   background-color: black;
-//   text-align: center;
-//   color: white;
-// }
-// @keyframes cssAnimation {
-//   to {
-//       width:0;
-//       height:0;
-//       overflow:hidden;
-//   }
-// }
-// @-webkit-keyframes cssAnimation {
-//   to {
-//       width:0;
-//       height:0;
-//       visibility:hidden;
-//   }
-// }
+#flash-notice {
+  -moz-animation: cssAnimation 0s ease-in 3s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 3s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 3s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+@keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+  }
+}

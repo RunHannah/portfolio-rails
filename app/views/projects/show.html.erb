@@ -4,25 +4,21 @@
     <a><%= link_to "Edit This Project", edit_project_path(@project) %></a>
   <% end %>
 
-  <hr>
-      <div class="card">
-        <div class="card-body">
-          <li style="list-style:none;">
 
-                <%= image_tag @project.image.url(:large) %>
+    <div class="card">
+      <div class="card-body">
+        <li style="list-style:none;">
 
-                <br>
-                <strong>Project Name: </strong><%= @project.project_name %>
-                <br>
-                <strong>Technologies Used: </strong><%= @project.project_technology %>
-                <br>
-                <strong>Description: </strong><%= @project.project_description %>
+          <%= image_tag @project.image.url(:large) %>
 
+          <br>
+          <strong>Project Name: </strong><%= @project.project_name %>
+          <br>
+          <strong>Technologies Used: </strong><%= @project.project_technology %>
+          <br>
+          <strong>Description: </strong><%= @project.project_description %>
 
-
-          </li>
-        </div>
+        </li>
       </div>
-
-    <hr>
+    </div>
 </div>

@@ -1,40 +1,46 @@
-<div class="container">
+<div class="container" id="projects">
 
   <% if current_user && current_user.admin %>
     <a><%= link_to "Add a Project", new_project_path %></a>
   <% end %>
-  <hr>
+
 </div>
 
 
 <div class="container">
-  <div class="card">
 
-    <% if @projects.any? %>
-      <% @projects.each do |project| %>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
 
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/office.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">
+        <% if @projects.any? %>
+          <% @projects.each do |project| %>
 
-            <%= link_to project.project_name, project_path(project) %>
-            
-            <i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
+            <div class="card-image waves-effect waves-block waves-light">
 
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
+              <img class="activator" src="<%= project.image.url(:medium) %>">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
 
-        <% end %>
+                <%= link_to project.project_name, project_path(project) %>
 
-      <% else %>
-        <p>There are no current projects.</p>
+                <i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
 
-      <% end %>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+
+            <% end %>
+
+          <% else %>
+            <p>There are no current projects.</p>
+
+          <% end %>
+      </div>
+    </div>
   </div>
 </div>
