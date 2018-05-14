@@ -9,26 +9,28 @@
 
 <div class="container">
   <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <% if @projects.any? %>
-        <% @projects.each do |project| %>
 
-      <span class="card-title activator grey-text text-darken-4">
-        <%= link_to project.project_name, project_path(project) %>
-        <i class="material-icons right">more_vert</i></span>
+    <% if @projects.any? %>
+      <% @projects.each do |project| %>
+
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">
+
+            <%= link_to project.project_name, project_path(project) %>
+            
+            <i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
 
         <% end %>
-
-      <p><a href="#">This is a link</a></p>
-    </div>
-
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
 
       <% else %>
         <p>There are no current projects.</p>
