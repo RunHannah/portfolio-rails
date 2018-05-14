@@ -10,27 +10,19 @@ html {
 }
 
 nav {
-  height: 80px;
+  height: 100px;
   align-items: stretch;
   text-align: center;
-  padding: 20px 0px 20px 0px;
   background-color: #ffffff !important;
   border-bottom: none!important;
   box-shadow: none!important;
+  color: grey;
 }
 
 nav a {
   text-decoration: none !important;
   color: grey;
   padding: 20px 20px 20px 20px;
-}
-
-#welcome {
-  color: grey;
-  margin-top: -1px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  text-align: center;
 }
 
 
@@ -43,7 +35,7 @@ body {
 }
 
 #projects {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 #project-show {
@@ -51,6 +43,7 @@ body {
   border-bottom: none!important;
   box-shadow: none!important;
 }
+
 
 /**
  * Footer Styles
@@ -63,7 +56,6 @@ body {
   left: 0;
   padding: 1rem;
   color: grey;
-  text-align: center;
 }
 
 .col-container {
@@ -74,31 +66,30 @@ body {
   flex: 1;
 }
 
-#flash-notice {
-  -moz-animation: cssAnimation 0s ease-in 3s forwards;
-  /* Firefox */
-  -webkit-animation: cssAnimation 0s ease-in 3s forwards;
-  /* Safari and Chrome */
-  -o-animation: cssAnimation 0s ease-in 3s forwards;
-  /* Opera */
-  animation: cssAnimation 0s ease-in 3s forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  background-color: black;
-  text-align: center;
-  color: white;
-}
-@keyframes cssAnimation {
-  to {
-      width:0;
-      height:0;
-      overflow:hidden;
-  }
-}
-@-webkit-keyframes cssAnimation {
-  to {
-      width:0;
-      height:0;
-      visibility:hidden;
-  }
-}
+// #flash-notice {
+//   -moz-animation: cssAnimation 0s ease-in 3s forwards;
+//   /* Firefox */
+//   -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+//   /* Safari and Chrome */
+//   -o-animation: cssAnimation 0s ease-in 3s forwards;
+//   /* Opera */
+//   animation: cssAnimation 0s ease-in 3s forwards;
+//   -webkit-animation-fill-mode: forwards;
+//   animation-fill-mode: forwards;
+//   background-color: black;
+//   text-align: center;
+// }
+// @keyframes cssAnimation {
+//   to {
+//       width:0;
+//       height:0;
+//       overflow:hidden;
+//   }
+// }
+// @-webkit-keyframes cssAnimation {
+//   to {
+//       width:0;
+//       height:0;
+//       visibility:hidden;
+//   }
+// }
