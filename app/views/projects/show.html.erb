@@ -5,7 +5,7 @@
   <% end %>
 
 
-    <div class="card">
+    <div class="card" id="project-show">
       <div class="card-body">
         <li style="list-style:none;">
 
@@ -17,6 +17,8 @@
           <strong>Technologies Used: </strong><%= @project.project_technology %>
           <br>
           <strong>Description: </strong><%= @project.project_description %>
+          <br>
+          <a href="<%= @project.github %>">Github</a>
 
         </li>
       </div>
