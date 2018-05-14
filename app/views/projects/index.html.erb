@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Projects</h1>
+
   <% if current_user && current_user.admin %>
     <a><%= link_to "Add a Project", new_project_path %></a>
   <% end %>
@@ -8,16 +8,31 @@
 
 
 <div class="container">
-  <% if @projects.any? %>
-  <ol>
-    <% @projects.each do |project| %>
-    <p><%= link_to project.project_name, project_path(project) %></p>
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/office.jpg">
+    </div>
+    <div class="card-content">
+      <% if @projects.any? %>
+        <% @projects.each do |project| %>
 
-    <% end %>
-  </ol>
+      <span class="card-title activator grey-text text-darken-4">
+        <%= link_to project.project_name, project_path(project) %>
+        <i class="material-icons right">more_vert</i></span>
 
-  <% else %>
-    <p>There are no current projects.</p>
+        <% end %>
 
-  <% end %>
+      <p><a href="#">This is a link</a></p>
+    </div>
+
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+
+      <% else %>
+        <p>There are no current projects.</p>
+
+      <% end %>
+  </div>
 </div>

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'welcome#index'
+  root :to => 'projects#index'
 
   devise_for :users
 
@@ -9,5 +9,4 @@ Rails.application.routes.draw do
 
   resources :projects
 
-  resources :skills
 end

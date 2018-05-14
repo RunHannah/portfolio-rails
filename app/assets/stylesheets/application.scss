@@ -10,9 +10,13 @@ html {
 }
 
 nav {
+  height: 80px;
   align-items: stretch;
   text-align: center;
   padding: 20px 0px 20px 0px;
+  background-color: #ffffff !important;
+  border-bottom: none!important;
+  box-shadow: none!important;
 }
 
 nav a {
@@ -23,8 +27,8 @@ nav a {
 
 #welcome {
   color: grey;
-  margin-top: -15px;
-  padding-top: 40px;
+  margin-top: -1px;
+  padding-top: 30px;
   padding-bottom: 40px;
   text-align: center;
 }
