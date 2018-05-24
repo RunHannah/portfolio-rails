@@ -1,26 +1,23 @@
 <div class="container">
-  <h3><%= @project.project_name %></h3>
+  <p id="project-title"><%= @project.project_name %></p>
   <% if current_user && current_user.admin %>
     <a><%= link_to "Edit This Project", edit_project_path(@project) %></a>
   <% end %>
 
+  <div class="card" id="project-show">
+    <div class="card-body">
+      <li style="list-style:none;">
 
-    <div class="card" id="project-show">
-      <div class="card-body">
-        <li style="list-style:none;">
+        <%= image_tag @project.image.url(:large) %>
 
-          <%= image_tag @project.image.url(:large) %>
+        <br>
+        <strong>Technologies Used: </strong><%= @project.project_technology %>
+        <br>
+        <strong>Description: </strong><%= @project.project_description %>
+        <br>
+        <a href="<%= @project.github %>">Github</a>
 
-          <br>
-          <strong>Project Name: </strong><%= @project.project_name %>
-          <br>
-          <strong>Technologies Used: </strong><%= @project.project_technology %>
-          <br>
-          <strong>Description: </strong><%= @project.project_description %>
-          <br>
-          <a href="<%= @project.github %>">Github</a>
-
-        </li>
-      </div>
+      </li>
     </div>
+  </div>
 </div>

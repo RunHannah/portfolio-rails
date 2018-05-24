@@ -16,6 +16,7 @@ nav {
   box-shadow: none !important;
   color: grey !important;
   padding: 15px 20px 10px 20px;
+  margin-bottom: -40px;
   .logo {
     float: left;
     margin: 0;
@@ -34,37 +35,41 @@ nav li a {
   color: grey;
 }
 
-// body {
-//   position: relative;
-//   margin: 0;
-//   padding-bottom: 6rem;
-//   min-height: 100%;
-//   font-family: "Helvetica Neue", Arial, sans-serif;
-// }
-
 .card {
-    width: 100%;
-    float: left;
+  width: 1000px;
+  max-width: 100%;
 }
+
 .card-content{
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
+  a {
+    &:hover {
+      color: grey;
     }
+  }
+}
 
 #projects {
   margin-top: 60px;
 }
 
 #project-show {
-  align-content: center !important;
   border-bottom: none!important;
   box-shadow: none!important;
+  margin: auto;
+  width: inherit;
+}
+
+#project-title {
+  font-size: 1.5em;
+  text-align: center;
 }
 
 #about {
   font-size: 1.5em;
   font-weight: bold;
-  
+
 }
 
 
