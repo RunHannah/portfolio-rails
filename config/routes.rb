@@ -7,6 +7,8 @@ Rails.application.routes.draw do
      get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
+  get '/about', to: 'projects#about', as: 'about'
+
   resources :projects
 
 end
