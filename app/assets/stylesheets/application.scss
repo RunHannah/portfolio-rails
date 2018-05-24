@@ -34,6 +34,15 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+.card {
+    width: 100%;
+    float: left;
+}
+.card-content{
+    text-align: center;
+    font-weight: bold;
+    }
+
 #projects {
   margin-top: 60px;
 }
