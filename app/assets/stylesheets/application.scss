@@ -11,28 +11,36 @@ html {
 
 nav {
   height: 100px;
-  align-items: stretch;
-  text-align: center;
   background-color: #ffffff !important;
   border-bottom: none!important;
-  box-shadow: none!important;
+  box-shadow: none !important;
+  color: grey !important;
+  padding: 15px 20px 10px 20px;
+  .logo {
+    float: left;
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  li {
+    display: block;
+    float: right;
+    text-decoration: none !important;
+    font-size: 1.5em;
+  }
+}
+
+nav li a {
   color: grey;
 }
 
-nav a {
-  text-decoration: none !important;
-  color: grey;
-  padding: 20px 20px 20px 20px;
-}
-
-
-body {
-  position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
+// body {
+//   position: relative;
+//   margin: 0;
+//   padding-bottom: 6rem;
+//   min-height: 100%;
+//   font-family: "Helvetica Neue", Arial, sans-serif;
+// }
 
 .card {
     width: 100%;
@@ -68,13 +76,6 @@ body {
   text-align: center;
 }
 
-.col-container {
-  display: flex;
-  width: 100%;
-}
-.col {
-  flex: 1;
-}
 
 // #flash-notice {
 //   -moz-animation: cssAnimation 0s ease-in 3s forwards;
