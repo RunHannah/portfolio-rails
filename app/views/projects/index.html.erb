@@ -17,6 +17,9 @@
               <!-- <i class="material-icons right">more_vert</i></span> -->
               <p><%= link_to project.project_name, project_path(project) %></p>
               <p><a href="<%= project.deployed %>">Live</a></p>
+              <p>Technologies Used: </p><%= project.project_technology %>
+              <br>
+              <p>Description: </p><%= project.project_description %>
             </div>
 
               <!-- <div class="card-reveal">
