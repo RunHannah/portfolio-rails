@@ -1,8 +1,6 @@
-# Portfolio - under construction!
-
 #### Epicodus Rails Course Week 2 - Code Review
 
-##### An application to share my work and experience, built on Rails. 04/27/2018
+##### An application to share my work and experience, built using Ruby on Rails. 04/27/2018
 
 ## By Hannah Lee
 
